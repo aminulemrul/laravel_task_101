@@ -15,13 +15,13 @@ The user will have username/email, password, fullName, phone etc. You can add mo
 | 2              | Department Admin |
 | 3              | Worker           |
 
-### Main Admin: 
+#### Main Admin: 
 Only the main admin can create a user and assign their role and department  while registering. Main admin will also be able to make users active/inactive and have full access to the system.
 
-### Department Admin: 
+#### Department Admin: 
 Will only be able to view the  list of works and active users of his own department. Will also be able to assign works to users.
 
-### Worker: 
+#### Worker: 
 Only be able to see the list of works assigned to them.
 
 ## Departments: 
@@ -49,13 +49,13 @@ Only be able to see the list of works assigned to them.
 | 9             | Customer Support              | Operation |
 | 10            | Manage Vendors                | Operation |
 
-#### Note: 
+##### Note: 
 one worker can be assigned to multiple works and One work can be assigned to multiple workers
 
 
 
 ## Note:
-1. Create the database and requred tables to implement all the functionalities.
+1. Create the database, requred tables and relations to implement all the functionalities.
 2. Please try to keep your codebase as clean as possible. Line indentation, code
    formatting in both php classes & frontend views should be properly done. 
 3. You are free to use any library code.
@@ -64,7 +64,7 @@ one worker can be assigned to multiple works and One work can be assigned to mul
    **(Do not push in master)**
 6. After submitting please reply to the email metioning you branch name.
 7. If possible also deploy the project and share a live link and test credentials with the reply of the email but not mandatory.
-8. Last date of submission:- **10-02-2021 11.59PM**
+8. Last date of submission: **10-02-2021 11.59PM**
 9. Feel Free to Contact avijit.nandy@dgsl.com.bd for any queries.
 
 
