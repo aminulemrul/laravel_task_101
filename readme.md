@@ -60,7 +60,7 @@ one worker can be assigned to multiple works and One work can be assigned to mul
    formatting in both php classes & frontend views should be properly done. 
 3. Using Vue.js in the front-end will be prefered but not mandatory.
 4. Push your code to our git repo https://github.com/digidevhub/laravel_task_101.git  by creating a new branch with your name 
-5. Last date of submission: ##### 10-02-2021
+5. Last date of submission: ##### 10-02-2021 11.59PM
 6. Feel Free to Contact avijit.nandy@dgsl.com.bd for any queries.
 
 
