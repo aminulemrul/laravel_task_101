@@ -38,7 +38,7 @@ Only be able to see the list of works assigned to them.
 
 | work_id       | work_name                     | dept      |
 | ------------- |-------------------------------| ----------|
-| 1             | Network setup and maintenance | IT        |
+| 1             | Network Setup and Maintenance | IT        |
 | 2             | Software Development          | IT        |
 | 3             | Recruitment Taks              | HR        |
 | 4             | Salary Disbursement           | HR        |
