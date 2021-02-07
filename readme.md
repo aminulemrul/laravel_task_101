@@ -41,10 +41,10 @@ Only be able to see the list of works assigned to them.
 | 1             | Network setup and maintenance | IT        |
 | 2             | Software Development          | IT        |
 | 3             | Recruitment Taks              | HR        |
-| 4             | Salary disbursement           | HR        |
+| 4             | Salary Disbursement           | HR        |
 | 5             | Budget Calculation            | Finance   |
 | 6             | Financial Audit               | Finance   |
-| 7             | Product training              | Training  |
+| 7             | Product Training              | Training  |
 | 8             | QA                            | Operation |
 | 9             | Customer Support              | Operation |
 | 10            | Manage Vendors                | Operation |
@@ -55,13 +55,19 @@ one worker can be assigned to multiple works and One work can be assigned to mul
 
 
 ## Note:
-1. You are free to use any library code.
+1. Create the database and requred tables to implement all the functionalities.
 2. Please try to keep your codebase as clean as possible. Line indentation, code
    formatting in both php classes & frontend views should be properly done. 
-3. Using Vue.js in the front-end will be prefered but not mandatory.
-4. Push your code to our git repo https://github.com/digidevhub/laravel_task_101.git  by creating a new branch with your name. 
+3. You are free to use any library code.
+4. Using Vue.js in the front-end will be prefered but not mandatory.
+5. Push your code to our git repo https://github.com/digidevhub/laravel_task_101.git  by creating a new branch with your name. 
    **(Do not push in master)**
-5. Last date of submission:- **10-02-2021 11.59PM**
-6. Feel Free to Contact avijit.nandy@dgsl.com.bd for any queries.
+6. After submitting please reply to the email metioning you branch name.
+7. If possible also deploy the project and share a live link and test credentials with the reply of the email but not mandatory.
+8. Last date of submission:- **10-02-2021 11.59PM**
+9. Feel Free to Contact avijit.nandy@dgsl.com.bd for any queries.
+
+
+##### Best of Luck
 
 
