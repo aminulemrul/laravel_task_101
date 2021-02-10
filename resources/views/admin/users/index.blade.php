@@ -9,7 +9,9 @@
             <div class="box-header with-border">
                 <h3 class="box-title">Users</h3>
                 <div class="box-tools pull-right">
-                    <a href="{{ route('admin.users.create') }}" class="btn btn-primary"> Add User</a>
+                    @can('user-create')
+                        <a href="{{ route('admin.users.create') }}" class="btn btn-primary"> Add User</a>
+                    @endcan
                 </div>
             </div>
             <div class="panel-body">
@@ -61,6 +63,10 @@
                                             <form method="POST" action="{{ route('admin.users.destroy', $user->id) }}" accept-charset="UTF-8" class="data-form">
                                                 @csrf
                                                 <li><a href="{{ route('admin.users.assign-work-form', $user->id) }}" class="btn">Assign Work</a></li>
+
+                                                @can('user-list')
+                                                    <li><a href="{{route('admin.users.show', $user->id)}}" class="btn">Show</a></li>
+                                                @endcan
                                                 @can('user-edit')
                                                     <li><a href="{{route('admin.users.edit', $user->id)}}" class="btn">Edit</a></li>
                                                 @endcan

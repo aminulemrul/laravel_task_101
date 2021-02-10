@@ -33,11 +33,16 @@ class WorkController extends Controller
 
     public function create()
     {
-        $users = User::where('type', 'Worker')->get();
+        if(auth()->user()->type == 'Main Admin'){
+            $users = User::where('type', 'Worker')->get();
+        }
+        else{
+            $users = User::where('type', 'Worker')->where('dept_id', auth()->user()->dept_id)->get();
+        }
         if (auth()->user()->type == 'Main Admin') {
             $departments = Department::all();
         } else {
-            $departments = Department::where('id', Auth::user()->dept_id)->get();
+            $departments = Department::where('id', auth()->user()->dept_id)->get();
         }
         return view('admin.work.create-edit', compact('users', 'departments'));
     }
@@ -63,7 +68,12 @@ class WorkController extends Controller
         if (empty($work)) {
             return redirect()->route('admin.works.index');
         }
-        $users = User::where('type', 'Worker')->get();
+        if(auth()->user()->type == 'Main Admin'){
+            $users = User::where('type', 'Worker')->get();
+        }
+        else{
+            $users = User::where('type', 'Worker')->where('dept_id', auth()->user()->dept_id)->get();
+        }
         if (auth()->user()->type == 'Main Admin') {
             $departments = Department::all();
         } else {
