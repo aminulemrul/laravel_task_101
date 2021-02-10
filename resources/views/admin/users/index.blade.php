@@ -9,7 +9,9 @@
             <div class="box-header with-border">
                 <h3 class="box-title">Users</h3>
                 <div class="box-tools pull-right">
-                    <a href="{{ route('admin.users.create') }}" class="btn btn-primary"> Add User</a>
+                    @can('user-create')
+                        <a href="{{ route('admin.users.create') }}" class="btn btn-primary"> Add User</a>
+                    @endcan
                 </div>
             </div>
             <div class="panel-body">

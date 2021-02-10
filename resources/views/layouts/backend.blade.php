@@ -122,30 +122,38 @@
                         <span>Dashboard</span>
                     </a>
                 </li>
-                <li @if(request()->is('admin/users')) class="active" @endif>
-                    <a href="{{ route('admin.users.index') }}">
-                        <i class="fa fa-user-secret"></i>
-                        <span>Users</span>
-                    </a>
-                </li>
-                <li @if(request()->is('admin/roles')) class="active" @endif>
-                    <a href="{{ route('admin.roles.index') }}">
-                        <i class="fa fa-user-secret"></i>
-                        <span>Role</span>
-                    </a>
-                </li>
-                <li @if(request()->is('admin/departments')) class="active" @endif>
-                    <a href="{{ route('admin.departments.index') }}">
-                        <i class="fa fa-user-secret"></i>
-                        <span>Department</span>
-                    </a>
-                </li>
-                <li @if(request()->is('admin/works')) class="active" @endif>
-                    <a href="{{ route('admin.works.index') }}">
-                        <i class="fa fa-tags"></i>
-                        <span>Work</span>
-                    </a>
-                </li>
+                @can('user-list')
+                    <li @if(request()->is('admin/users')) class="active" @endif>
+                        <a href="{{ route('admin.users.index') }}">
+                            <i class="fa fa-user-secret"></i>
+                            <span>Users</span>
+                        </a>
+                    </li>
+                @endcan
+                @can('role-list')
+                    <li @if(request()->is('admin/roles')) class="active" @endif>
+                        <a href="{{ route('admin.roles.index') }}">
+                            <i class="fa fa-user-secret"></i>
+                            <span>Role</span>
+                        </a>
+                    </li>
+                @endcan
+                @can('department-list')
+                    <li @if(request()->is('admin/departments')) class="active" @endif>
+                        <a href="{{ route('admin.departments.index') }}">
+                            <i class="fa fa-user-secret"></i>
+                            <span>Department</span>
+                        </a>
+                    </li>
+                @endcan
+                @can('work-list')
+                    <li @if(request()->is('admin/works')) class="active" @endif>
+                        <a href="{{ route('admin.works.index') }}">
+                            <i class="fa fa-tags"></i>
+                            <span>Work</span>
+                        </a>
+                    </li>
+                @endcan
             </ul>
         </section>
         <!-- /.sidebar -->
