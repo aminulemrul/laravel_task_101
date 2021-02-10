@@ -27,7 +27,7 @@
                 <div class="small-box bg-yellow">
                     <div class="inner">
                         <h3>{{$totalWorker}}</h3>
-                        <p>Total Worker</p>
+                        <p>Total User</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-person-add"></i>

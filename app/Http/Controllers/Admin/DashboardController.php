@@ -12,7 +12,7 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        $totalWorker = User::where('type', 'Worker')->where('status', 'Active')->count();
+        $totalWorker = User::where('type', '!=', 'main Admin')->count();
         $totalDept = Department::count();
         $totalWork = Work::count();
         return view('admin.dashboard', compact('totalWorker', 'totalDept', 'totalWork'));
