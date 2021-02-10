@@ -24,7 +24,7 @@
                     </thead>
                     <tbody>
                     @if(!empty($roles))
-                        @foreach($roles  as $role)
+                        @foreach($roles as $role)
                             <tr>
                                 <td> {{ $role->name }}</strong> </td>
                                 <td>

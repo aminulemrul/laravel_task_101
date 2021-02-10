@@ -31,13 +31,7 @@
                                     <div class="form-group @error('name') has-error @enderror">
                                         <label for="name" class="with-help">Permission</label><br>
                                         @foreach($permission as $value)
-                                            @if(!isset($role))
-                                                <label> <input type="checkbox" name="permission[]" value="{{ $value->id }}">{{ $value->name }}</label>
-                                            @endif
-                                            @if(isset($role))
-                                                <label>{{ Form::checkbox('permission[]', $value->id, in_array($value->id, $rolePermissions) ? true : false, array('class' => 'name')) }}
-                                                    {{ $value->name }}</label>
-                                            @endif
+                                                <label> <input type="checkbox" name="permission[]" value="{{ $value->id }}"  @if(isset($role)){{in_array($value->id, $rolePermissions) ? 'checked' : ''}} @endif>&nbsp {{ $value->name }} </label>
                                             <br/>
                                         @endforeach
                                         @error('name')
