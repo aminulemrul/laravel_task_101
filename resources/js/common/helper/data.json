@@ -1,0 +1,27 @@
+{
+         "roles": [
+
+          ],
+          "permissions": [
+            {
+              "value": true,
+              "label": "Black"
+            },
+            {
+              "value": false,
+              "label": "White"
+            },
+            {
+              "value": true,
+              "label": "Red"
+            },
+            {
+              "value": false,
+              "label": "Green"
+            },
+            {
+              "value": true,
+              "label": "Blue"
+            }
+          ]
+}

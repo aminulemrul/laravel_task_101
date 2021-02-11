@@ -64,7 +64,7 @@ one worker can be assigned to multiple works and One work can be assigned to mul
    **(Do not push in master)**
 6. After submitting please reply to the email metioning your branch name.
 7. If possible also deploy the project and share a live link and test credentials with the reply of the email but not mandatory.
-8. Make sure to put the db sql file inside the repository.
+8. Last date of submission: **10-02-2021 11.59PM**
 9. Feel Free to Contact avijit.nandy@dgsl.com.bd for any queries.
 
 
